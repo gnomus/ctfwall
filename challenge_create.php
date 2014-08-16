@@ -35,8 +35,9 @@
         mysqli_stmt_execute($query);
         mysqli_stmt_close($query);
         mysqli_close($db);
+        header('Location: http://ctf.gnomus.de/');
+
     }
 
 
-    header('Location: http://ctf.gnomus.de/');
 ?>
