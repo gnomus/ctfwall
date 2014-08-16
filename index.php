@@ -36,9 +36,9 @@ After Registration you can directly login.
                       while ($challenge = mysqli_fetch_assoc($challenge_result)) {
                         ?>
                         <tr>
-                        <td>echo($challenge['name']);</td>
-                        <td>echo($challenge['link']);</td>
-                        <td>echo($challenge['value']);</td>
+                        <td><?php echo($challenge['name']); ?></td>
+                        <td><?php echo($challenge['link']); ?></td>
+                        <td><?php echo($challenge['value']); ?></td>
                         <td>NYI</td>
                         </tr><?php
                     }
