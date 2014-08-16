@@ -4,7 +4,7 @@
 
         $category = $_GET['category'];
         ?>
-        <form action="category_create.php" method="POST" class="form-inline" role="form">
+        <form method="POST" class="form-inline" role="form">
             <div class="form-group">
                 <label for="name">New Callenge</label>
                 <input type="text" class="form-control" name="name" placeholder="Challenge Name">
