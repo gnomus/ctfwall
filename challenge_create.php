@@ -30,7 +30,7 @@
         $category = $_POST['category'];
 
         $db = mysqli_connect('localhost','ctfdash','ctfdash','ctfdash');
-        $query = mysqli_prepare($db, 'INSERT INTO challenges (name,lin,value,category) VALUES (?,?,?,?)');
+        $query = mysqli_prepare($db, 'INSERT INTO challenges (name,link,value,category) VALUES (?,?,?,?)');
         mysqli_stmt_bind_param($query, 'ssii', $name,$link,$value,$category);
         mysqli_stmt_execute($query);
         mysqli_stmt_close($query);
