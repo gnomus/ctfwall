@@ -23,7 +23,7 @@ After Registration you can directly login.
                   <h1>
                       <?php echo(htmlspecialchars($category['name'])); ?>
                   <?php if(validAdminSession()) {?><small><a href="/category_remove.php?id=<?php echo($category['id']); ?>"><span class="glyphicon glyphicon-trash"></span></a></small><?php } ?></h1>
-                  <a href="/challenge_create.php?category=<?php echo(echo($category['id']); ?>">New Challenge</a>
+                  <a href="/challenge_create.php?category=<?php echo($category['id']); ?>">New Challenge</a>
                   <table>
                   <tr>
                   <th>Name</th>
