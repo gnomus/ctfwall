@@ -32,7 +32,7 @@ After Registration you can directly login.
                   <th>Working on</th>
                   </tr>
                   <?php
-                    $challenge_result = mysqli_query($db, "SELECT * FROM challenges WHERE category=" + $category['id']);
+                    $challenge_result = mysqli_query($db, "SELECT * FROM challenges WHERE category=".$category['id']);
                       while ($challenge = mysqli_fetch_assoc($challenge_result)) {
                         ?>
                         <tr>
